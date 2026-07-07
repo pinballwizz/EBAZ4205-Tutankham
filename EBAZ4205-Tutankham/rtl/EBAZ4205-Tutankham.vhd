@@ -147,7 +147,7 @@ P1_START   <= joy_BBBBFRLDU(5) when dipsw(0) = '0' else not joy(7);
 P2_START   <= joy_BBBBFRLDU(6) when dipsw(0) = '0' else not joy(8);
 
 P1_JOYSTICK <= not SW_RIGHT & not SW_LEFT & not SW_DOWN & not SW_UP;
-P1_JOYSTICK <= not SW_RIGHT & not SW_LEFT & not SW_DOWN & not SW_UP;
+P2_JOYSTICK <= not SW_RIGHT & not SW_LEFT & not SW_DOWN & not SW_UP;
 START       <= not P2_START & not P1_START;
 COIN        <= '0' & not SW_COIN;
 ---------------------------------------------------------------------------
